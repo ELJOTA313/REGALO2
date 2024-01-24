@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="formulario">
-        <label for="codigo">Ingresa el código:</label>
-        <input type="text" id="codigo" />
-        <button onclick="verificarCodigo()">Desbloquear Video</button>
+    <div class="contenedor">
+        <h1 class="titulo">Desbloquear Código</h1>
+        <div id="formulario">
+            <label for="codigo">Ingresa el código:</label>
+            <input type="text" id="codigo" />
+            <button onclick="verificarCodigo()">Desbloquear Video</button>
+        </div>
     </div>
     <div id="video-container" style="display: none;">
         <video controls>
