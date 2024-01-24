@@ -1,22 +1,37 @@
 body {
     font-family: 'Arial', sans-serif;
     text-align: center;
-    margin: 50px;
-    background-color: #f5f5f5; /* Cambiar el color de fondo */
-    color: #333; /* Cambiar el color del texto */
+    margin: 0;
+    padding: 0;
+    background-image: url('nombre_de_la_imagen_de_fondo.jpg');
+    background-size: cover;
+    height: 100vh; /* Hace que el contenedor cubra la altura completa de la ventana */
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: center; /* Centra horizontalmente los elementos */
+}
+
+.contenedor {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente blanco */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.titulo {
+    font-family: 'Times New Roman', serif;
+    color: #ff69b4; /* Color rosa */
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
 #formulario {
     margin-bottom: 20px;
-    background-color: #fff; /* Cambiar el color de fondo del formulario */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agregar sombra al formulario */
 }
 
 button {
-    background-color: #4caf50; /* Cambiar el color del botón */
-    color: #fff; /* Cambiar el color del texto del botón */
+    background-color: #4caf50;
+    color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
