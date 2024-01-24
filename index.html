@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desbloquear Video</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="formulario">
+        <label for="codigo">Ingresa el código:</label>
+        <input type="text" id="codigo" />
+        <button onclick="verificarCodigo()">Desbloquear Video</button>
+    </div>
+    <div id="video-container" style="display: none;">
+        <video controls>
+            <source src="tu_video.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
