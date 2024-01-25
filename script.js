@@ -1,16 +1,10 @@
-function mostrarLetras() {
-    var codigoIngresado = document.getElementById("codigo").value;
-    // Muestra las letras del código a medida que se ingresan
-    document.getElementById("codigoMostrado").textContent = codigoIngresado;
-}
-
 function verificarCodigo() {
     var codigoIngresado = document.getElementById("codigo").value;
-    var codigoCorrecto = "melodrama"; // Reemplaza con tu código
-    
-    if (codigoIngresado === codigoCorrecto) {
-        // Desbloquear el video
-        document.getElementById("videoFondo").style.opacity = 1;
+
+    // Cambia "tuCodigoSecreto" por el código que desees utilizar
+    if (codigoIngresado === "TEAMOSOFI") {
+        document.getElementById("formulario").style.display = "none";
+        document.getElementById("video-container").style.display = "block";
     } else {
         alert("Código incorrecto. Inténtalo de nuevo.");
     }
