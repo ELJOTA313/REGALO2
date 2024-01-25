@@ -8,20 +8,21 @@
 </head>
 <body>
     <div class="contenedor">
-        <div class="contenido">
+        <div class="contenido" id="contenidoPrincipal" style="display:none;">
             <h1>Título Personalizado</h1>
             <p>Texto personalizado que quieras agregar.</p>
-            <div class="formulario">
-                <label for="codigo">Ingresa el código:</label>
-                <input type="text" id="codigo" oninput="mostrarLetras()" placeholder="Código">
-            </div>
-            <button onclick="verificarCodigo()">Desbloquear Video</button>
+            <!-- Aquí puedes agregar tu propio contenido personalizado -->
         </div>
+        <div class="formulario">
+            <label for="codigo">Ingresa el código:</label>
+            <input type="text" id="codigo" oninput="mostrarLetras()" placeholder="Código">
+        </div>
+        <button onclick="verificarCodigo()">Desbloquear Video</button>
         <video id="videoFondo" autoplay loop muted>
-            <source src="Emilia - Muñecos.mp3 (Visualizer).mp4" type="video/mp4">
+            <source src="video_fondo.mp4" type="video/mp4">
             Tu navegador no soporta el tag de video.
         </video>
-        <video id="videoPrincipal" controls muted>
+        <video id="videoPrincipal" controls muted style="display:none;">
             <source src="video_principal.mp4" type="video/mp4">
             Tu navegador no soporta el tag de video.
         </video>
