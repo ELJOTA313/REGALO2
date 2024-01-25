@@ -8,16 +8,17 @@
 </head>
 <body>
     <div class="contenedor">
-        <!-- Aquí puedes agregar imágenes, videos o cualquier contenido que desees -->
         <div class="contenido">
-            <h1>INGRESE EL CODIGO PARA DESBLOQUEAR SORPRESA</h1>
-            <p>Only available to Sofi.</p>
-            <input type="password" id="codigo" placeholder="Ingresa el código">
+            <h1>Título Personalizado</h1>
+            <p>Texto personalizado que quieras agregar.</p>
+            <div class="formulario">
+                <label for="codigo">Ingresa el código:</label>
+                <input type="password" id="codigo" oninput="mostrarLetras()" placeholder="Código">
+            </div>
             <button onclick="verificarCodigo()">Desbloquear Video</button>
         </div>
         <video id="videoFondo" autoplay loop muted>
-            <!-- Puedes agregar el video de fondo que desees -->
-            <source src="REGALO2/Emilia - Muñecos.mp3 (Visualizer).mp4" type="video/mp4">
+            <source src="Emilia" type="video/mp4">
             Tu navegador no soporta el tag de video.
         </video>
     </div>
