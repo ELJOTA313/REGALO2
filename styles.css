@@ -9,6 +9,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden; /* Añadido para evitar que el video sobresalga en dispositivos pequeños */
 }
 
 .contenido {
@@ -49,10 +50,9 @@ video {
     position: fixed;
     top: 50%;
     left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
+    width: 100%; /* Cambiado a 100% para ocupar toda la pantalla */
+    height: 100%; /* Cambiado a 100% para ocupar toda la pantalla */
     z-index: 0;
     transform: translateX(-50%) translateY(-50%);
+    object-fit: cover; /* Añadido para asegurar que el video cubra completamente el contenedor */
 }
