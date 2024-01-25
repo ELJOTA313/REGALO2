@@ -1,10 +1,14 @@
 function verificarCodigo() {
     var codigoIngresado = document.getElementById("codigo").value;
-
-    // Cambia "tuCodigoSecreto" por el código que desees utilizar
-    if (codigoIngresado === "TEAMOSOFI") {
-        document.getElementById("formulario").style.display = "none";
-        document.getElementById("video-container").style.display = "block";
+    
+    // Aquí debes verificar el código ingresado con el código correcto
+    // Puedes agregar la lógica que desees, por ejemplo, comparando con una cadena fija
+    
+    var codigoCorrecto = "codigoEjemplo"; // Reemplaza con tu código
+    
+    if (codigoIngresado === codigoCorrecto) {
+        // Desbloquear el video
+        document.getElementById("videoFondo").style.opacity = 1;
     } else {
         alert("Código incorrecto. Inténtalo de nuevo.");
     }
