@@ -4,7 +4,7 @@ function verificarCodigo() {
     // Aquí debes verificar el código ingresado con el código correcto
     // Puedes agregar la lógica que desees, por ejemplo, comparando con una cadena fija
     
-    var codigoCorrecto = "codigoEjemplo"; // Reemplaza con tu código
+    var codigoCorrecto = "SOFISOFI"; // Reemplaza con tu código
     
     if (codigoIngresado === codigoCorrecto) {
         // Desbloquear el video
