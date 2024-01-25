@@ -9,7 +9,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden; /* Añadido para evitar que el video sobresalga en dispositivos pequeños */
+    overflow: hidden;
 }
 
 .contenido {
@@ -48,11 +48,9 @@ button {
 
 video {
     position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 100%; /* Cambiado a 100% para ocupar toda la pantalla */
-    height: 100%; /* Cambiado a 100% para ocupar toda la pantalla */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Ajustado a 100vw para ocupar toda la anchura de la pantalla */
+    height: 100vh; /* Ajustado a 100vh para ocupar toda la altura de la pantalla */
     z-index: 0;
-    transform: translateX(-50%) translateY(-50%);
-    object-fit: cover; /* Añadido para asegurar que el video cubra completamente el contenedor */
 }
