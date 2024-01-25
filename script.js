@@ -1,10 +1,12 @@
+function mostrarLetras() {
+    var codigoIngresado = document.getElementById("codigo").value;
+    // Muestra las letras del código a medida que se ingresan
+    document.getElementById("codigoMostrado").textContent = codigoIngresado;
+}
+
 function verificarCodigo() {
     var codigoIngresado = document.getElementById("codigo").value;
-    
-    // Aquí debes verificar el código ingresado con el código correcto
-    // Puedes agregar la lógica que desees, por ejemplo, comparando con una cadena fija
-    
-    var codigoCorrecto = "Zapallo"; // Reemplaza con tu código
+    var codigoCorrecto = "melodrama"; // Reemplaza con tu código
     
     if (codigoIngresado === codigoCorrecto) {
         // Desbloquear el video
