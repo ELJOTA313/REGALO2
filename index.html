@@ -13,7 +13,8 @@
             <p>Texto personalizado que quieras agregar.</p>
             <div class="formulario">
                 <label for="codigo">Ingresa el código:</label>
-                <input type="password" id="codigo" oninput="mostrarLetras()" placeholder="Código">
+                <!-- Cambiado de type="password" a type="text" para mostrar los caracteres -->
+                <input type="text" id="codigo" oninput="mostrarLetras()" placeholder="Código">
             </div>
             <button onclick="verificarCodigo()">Desbloquear Video</button>
         </div>
