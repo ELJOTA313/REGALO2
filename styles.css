@@ -5,13 +5,13 @@ body {
 
 .contenedor {
     position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contenido {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
     color: white;
     z-index: 1;
@@ -25,11 +25,24 @@ p {
     font-size: 1.2em;
 }
 
-input,
+.formulario {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+input {
+    font-size: 1em;
+    padding: 10px;
+}
+
 button {
     font-size: 1em;
     padding: 10px;
-    margin-top: 10px;
 }
 
 video {
