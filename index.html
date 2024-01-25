@@ -3,22 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Especial</title>
-    <link rel="stylesheet" href="estilos.css">
+    <title>Desbloquear Video</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<title>Desbloquear Video</title>
 <body>
-    <div class="contenedor">
-        <div class="contenido" id="contenidoPrincipal" style="display:none;">
-            <h1>Título Personalizado</h1>
-            <p>Texto personalizado que quieras agregar.</p>
-            <!-- Aquí puedes agregar tu propio contenido personalizado -->
-        </div>
-        <div class="formulario">
-            <label for="codigo">Ingresa el código:</label>
-            <input type="text" id="codigo" placeholder="Código">
-        </div>
+    <div id="formulario">
+        <label for="codigo">Ingresa el código:</label>
+        <input type="text" id="codigo" />
         <button onclick="verificarCodigo()">Desbloquear Video</button>
+    </div>
+    <div id="video-container" style="display: none;">
+        <!-- Aquí coloca el código del reproductor de video -->
+        <video controls>
+            <source src="tu_video.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
         <video id="videoFondo" autoplay loop muted>
             <source src="Emilia - Muñecos.mp3 (Visualizer).mp4" type="video/mp4">
             Tu navegador no soporta el tag de video.
